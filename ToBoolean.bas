@@ -60,6 +60,8 @@ Public Function ToBoolean(ByVal ToConvert As Variant) As Boolean
                 Else
                     ToBoolean = True
                 End If
+            Else
+                ToBoolean = False
             End If
     End Select
 End Function
