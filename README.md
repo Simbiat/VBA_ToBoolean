@@ -1,2 +1,2 @@
 # VBA_ToBoolean
-Bringing VBA's CBool() closer to equivalent of higher languages
+VBA's `CBool()` function has quite a few limiations, for example, it will properly work only with numeric values, with limited set of strings and will fail with anything else. Other languages (like PHP) have far more sophisticated conversion functions, that can also deal with "empty" values and objects. This function tries to replicate that. You may want to expand string values to add langauges other than Russian, English and German, but otherwise, it's ready to use.
