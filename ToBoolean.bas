@@ -54,7 +54,7 @@ Public Function ToBoolean(ByVal ToConvert As Variant) As Boolean
         'Arrays
         Case Else
             '8192 is added to any regular value identifying array of respective types. 8192 and 8193 would mean arrays of 'empty' elements, so we exclude them
-            If ToConvert = 12 Or ToConvert = 36 Or ToConvert >= 8194 Then
+            If VarType(ToConvert) = 12 Or VarType(ToConvert) = 36 Or VarType(ToConvert) >= 8194 Then
                 If UBound(ToConvert) - LBound(ToConvert) + 1 < 1 Then
                     ToBoolean = False
                 Else
